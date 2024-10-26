@@ -1,0 +1,59 @@
+.custom-toggler {
+    background: none;
+    border: none;
+    padding: 0.25rem 0.75rem;
+  }
+    
+  .custom-toggler .toggler-icon {
+    display: block;
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: #020114;
+    margin: 0.3rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-toggler.open .toggler-icon:nth-child(1) {
+    transform: translateY(0.45rem) rotate(45deg);
+  }
+  
+  .custom-toggler.open .toggler-icon:nth-child(2) {
+    opacity: 0;
+  }
+    
+  .custom-toggler.open .toggler-icon:nth-child(3) {
+    transform: translateY(-0.45rem) rotate(-45deg);
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .bd-layout {
+    display: grid;
+    grid-template-areas: "sidebar main";
+    grid-template-columns: 1fr 5fr;
+    gap: 0.8rem;
+  }
+  
+  .navbar {
+    padding: 1.1rem 0;
+    transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease, top 0.4s ease;
+    /* background: linear-gradient(90deg,  #02011411 25%, #020114 80%); */
+    background: #02011400;
+    top: 0;
+  }
+  
+  .navbar.scrolled {
+    background: #020114;
+    padding: 0.6rem 0rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+    .toggler-icon {
+      background-color: #ffffff;
+    }
+  }
+  
+  .navbar.hidden {
+    top: -400px;
+  }
