@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding-top: 150px; /* Adjust the value to match the height of your navbar */
+  }
+
+.nearby-restaurants-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .restaurant-list {
+    width: 40%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    overflow-y: auto;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .restaurant-list h2 {
+    margin-bottom: 20px;
+  }
+  
+  .restaurant-list input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .restaurant-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .restaurant-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .restaurant-list h3 {
+    margin: 0 0 5px;
+  }
+  

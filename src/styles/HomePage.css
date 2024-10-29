@@ -1,3 +1,117 @@
+/* General Styles */
 body {
-    background-color: rgb(243, 243, 243);
-}
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 70px; /* Adjust the value to match the height of your navbar */
+  }
+  
+  .homepage {
+    padding: 0;
+    margin: 0;
+    margin-top: 60px; /* Adjust this value as needed */
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 20px 0;
+    background-color: blueviolet;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login-btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .header-section {
+    background: linear-gradient(to bottom right, #333, #777);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .header-section h1 {
+    font-size: 48px;
+  }
+  
+  .header-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .header-section .btn {
+    width: 200px; /* Set a custom width */
+    margin: 0 auto; /* Center the button horizontally */
+  }
+  
+
+  /* How It Works Section */
+  .how-it-works {
+    margin: 50px 0;
+  }
+  
+  .how-it-works h2 {
+    margin-bottom: 30px;
+  }
+
+  .how-it-works .btn {
+    background-color: #ff7f00;
+    color: white;
+    border-color: #ff7f00; /* To match the border */
+  }
+  
+  .how-it-works .btn:hover {
+    background-color: #e66900; /* Optional: A darker shade on hover */
+  }
+
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Featured Dishes */
+  .featured-dishes {
+    margin: 50px 0;
+  }
+  
+  .dish-card {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  /* Call to Action */
+  .cta {
+    background-color: #f8f8f8;
+    padding: 50px;
+  }
+  
+  .cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .cta .btn {
+    width: 200px; /* Set your desired width */
+    margin: 0 auto; /* Center the button horizontally */
+  }
+  

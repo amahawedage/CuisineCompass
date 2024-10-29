@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding-top: 170px; /* Adjust the value to match the height of your navbar */
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 20px 0;
+    background-color: black;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login-btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+
+  .login-form {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+  
+  .login-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .login-form p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Input Fields */
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Forgot Password Link */
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Submit Button */
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+  }
+  
