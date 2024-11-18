@@ -7,7 +7,7 @@ import RestaurantSearchPage from './pages/RestaurantSearchPage';
 import CustomerPreferencePage from './pages/CustomerPreferencePage';
 import Register from './pages/Register';
 import NearbyRestaurants from './pages/NearbyRestaurants';
-
+import Booking from './pages/Booking';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,6 +29,7 @@ function App() {
         <Route path="/Preferences" element={<CustomerPreferencePage />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Map" element={<NearbyRestaurants />} />
+        <Route path="/Booking" element={<Booking />} />
       </Routes>
     </>
   )

@@ -96,6 +96,51 @@ export default function HomePage() {
       </section>
 
 
+{/* Featured Restaurents Section */}
+<section className="featured-dishes text-center">
+        <h2>Featured Restaurents</h2>
+        <div className="row justify-content-center">
+          <div className="col-md-3">
+            <div className="dish-card">
+              <img 
+                src="src/images/FeaturedRestaurents/restaurant-interior.jpg" 
+                alt="Shang Palace, Shangri-La" 
+                className="dish-image" 
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }} 
+              />
+              <h5>Shang Palace, Shangri-La</h5>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="dish-card">
+              <img 
+                src="src/images/FeaturedRestaurents/main-area-with-action.jpg" 
+                alt="Indian Ocean Pavilion" 
+                className="dish-image" 
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }} 
+              />
+              <h5>Indian Ocean Pavilion</h5>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="dish-card">
+              <img 
+                src="src/images/FeaturedRestaurents/food-terminals.jpg" 
+                alt="Central Restaurant" 
+                className="dish-image" 
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }} 
+              />
+              <h5>Central Restaurant</h5>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+
       {/* Call to Action Section */}
       <section className="cta text-center">
         <h2>Ready to Embark on a Culinary Journey?</h2>

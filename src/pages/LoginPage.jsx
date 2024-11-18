@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import '../styles/LoginPage.css';
 import Navbar from '../components//navbar/Navbar'; // Adjust path if necessary
 
@@ -6,12 +7,29 @@ import Navbar from '../components//navbar/Navbar'; // Adjust path if necessary
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = async(e) => {
     e.preventDefault();
-    console.log('Logging in with:', { email, password });
+
+    try {
+      //const response = await axios.post('/api/login', { email, password });
+      //const response = await axios.post('/api/v1/auth/login', { email, password });
+      const response = await axios.post('http://localhost:9002/api/v1/auth/login', { email, password });
+
+      console.log('Loged in successfully:', response.data);
+      // Add logic to handle successful login here
+      localStorage.setItem('token', response.data.token);
+      setError('');
+      // Redirect to home page or dashboard
+      // navigate('/home');
+    } catch (err) {
+      setError('Invalid email or password');
+    }
+    }
+    //console.log('Logging in with:', { email, password });
     // Add login logic here (e.g., API request)
-  };
+
 
   return (
     <div className="login-page">
