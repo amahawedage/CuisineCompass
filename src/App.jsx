@@ -8,6 +8,8 @@ import CustomerPreferencePage from './pages/CustomerPreferencePage';
 import Register from './pages/Register';
 import NearbyRestaurants from './pages/NearbyRestaurants';
 import Booking from './pages/Booking';
+import RestaurantMenu from './pages/RestaurantMenu';
+import LoadMenuFromGPT from './pages/LoadMenuFromGPT';  // Import the new component
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,6 +32,11 @@ function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/Map" element={<NearbyRestaurants />} />
         <Route path="/Booking" element={<Booking />} />
+        <Route path="/menu" element={<RestaurantMenu />} />
+
+        {/* Add the route for LoadMenuFromGPT */}
+        <Route path="/LoadMenuFromGPT" element={<LoadMenuFromGPT />} />
+
       </Routes>
     </>
   )

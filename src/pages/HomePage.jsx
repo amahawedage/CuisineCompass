@@ -83,11 +83,11 @@ export default function HomePage() {
             <div className="dish-card">
               <img 
                 src="src/images/FeaturedDishes/Hoppers.jpg" 
-                alt="Lamprais" 
+                alt="Hoppers" 
                 className="dish-image" 
                 style={{ width: '100%', height: 'auto', borderRadius: '8px' }} 
               />
-              <h5>Lamprais</h5>
+              <h5>Hoppers</h5>
             </div>
           </div>
 

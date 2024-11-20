@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import axios from 'axios';
 import '../styles/LoginPage.css';
 import Navbar from '../components//navbar/Navbar'; // Adjust path if necessary
@@ -8,6 +9,8 @@ export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
+
 
   const handleLogin = async(e) => {
     e.preventDefault();
@@ -20,9 +23,11 @@ export default function LoginPage() {
       console.log('Loged in successfully:', response.data);
       // Add logic to handle successful login here
       localStorage.setItem('token', response.data.token);
+      localStorage.setItem('userEmail', email); // Store email globally
+
       setError('');
       // Redirect to home page or dashboard
-      // navigate('/home');
+       navigate('/home');
     } catch (err) {
       setError('Invalid email or password');
     }

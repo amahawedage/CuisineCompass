@@ -9,7 +9,7 @@ export default function CustomerPreferencePage() {
   });
 
   const foodOptions = {
-    mainMeals: ['Spicy', 'Vegetarian', 'Seafood', 'Meat', 'Halal', 'Gluten Free'],
+    mainMeals: ['Spicy Food', 'Vegetarian', 'Seafood', 'Meat', 'Halal', 'Gluten Free'],
     drinks: ['Tea', 'Coffee', 'Juices', 'Coconut Water', 'Alcoholic', 'Non Alcoholic'],
   };
 
